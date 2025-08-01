@@ -1,0 +1,289 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+header img{
+    background-image : url(images/bg-intro-desktop.svg);
+    background-position: 18%;
+    background-repeat: no-repeat;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+    position: fixed;
+    /* top: 0; */
+    background-color: white;
+    width: 100%;
+    z-index: 1;
+}
+
+ul li{
+    list-style: none;
+    display: inline;
+    padding-left: 20px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: hsl(228, 45%, 44%);
+}
+
+ul li a:hover{
+    text-decoration: underline aquamarine;
+}
+
+.request-link{
+    border-radius: 20px;
+    background-color:  aqua;
+    padding: 8px 20px;
+    border: aqua;
+}
+
+.request-link a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header div{
+    margin-left: 150px;
+}
+
+header div h2{
+    font-size: 40px;
+    width: 40%;
+}
+
+header div p{
+    width: 40%;
+    line-height: 1.5;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    color: grey;
+}
+
+header div a{
+    background-color: aqua;
+    text-decoration: none;
+    color: white;
+}
+
+header div button{
+    border-radius: 25px;
+    padding: 8px 20px;
+    background-color: aquamarine;
+}
+
+header img{
+    margin-top: 2rem;
+}
+
+section{
+    background-color: whitesmoke;
+    padding: 3rem 7rem;
+}
+
+.whychoose h2{
+    font-size: 40px;
+    width: 40%;
+    line-height: 0.5rem;
+
+}
+
+.whychoose p{
+     width: 60%;
+     color: grey;
+     line-height: 1.5rem;
+     margin-top: 1rem;
+}
+
+section .lists{
+    margin-top: 2rem;
+    display: flex;
+    gap: 30px;
+}
+
+.lists div p{
+    color: grey;
+    line-height: 1.5rem;
+}
+
+section h4{
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+
+main .triples h4{
+    width: 70%;
+    font-size: 20px;
+    line-height: 1.5rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+main .triples p{
+    width: 80%;
+    font-size: 18px;
+    line-height: 1.5rem;
+}
+
+main{
+    padding: 0px 7rem;
+}
+
+main h3{
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.articles{
+    display: flex;
+    gap: 55px;
+}
+
+.triples article{ 
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+}
+
+.footer{
+    background-color: hsl(233, 26%, 24%);
+    padding: 15px 30px;
+    margin-top: 75px;
+    align-items: center;
+}
+
+
+.footer .double{
+    display: flex;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    
+}
+
+.footer .double .chocolate{
+padding-left: 75px;
+}
+
+.footer .double .chocolate .image{
+    padding-top: 15px;
+}
+
+.footer .double .icons{
+    padding-top: 110px;
+}
+
+.footer .sweets li {
+   list-style: none;
+   font-size: 25px;
+   padding-left: 190px;
+   line-height: 4rem;
+}
+.footer .sweets li a{
+     text-decoration: none;
+     list-style: none;
+     color: white;
+     padding-right: 60px;
+}
+
+.footer .double .sleep{
+    padding-left: 370px;
+}
+
+.footer .sleep button{
+   padding: 15px 20px;
+   border-radius: 25px;
+   background-color: aquamarine;
+   position: relative;
+   left: 95px;
+}
+
+.footer .sleep{
+    padding-top: 55px;
+}
+
+.footer .sleep button a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer .sleep p{
+    color: white;
+    padding-top: 25px;
+    transform: scale(1.06);
+    transition: ease 0.5s;
+}
+
+/* media query starts here */
+@media screen and (max-width: 768px) {
+    nav ul li{
+        display: none;
+    }
+
+    nav .request-link{
+        display: none
+    }
+
+    header{
+        flex-direction: column-reverse;
+    }
+
+    header img{
+        width: 300px;
+        height: 500px;
+        padding-left: 15px;
+    }
+    
+    header div {
+        margin-left: 4rem;
+    }
+
+    header div h2{
+        width: 100%;
+        font-size: 25px;
+        /* padding-right: 275px; */
+    }
+
+    header div p {
+        width: 100%;
+    }
+
+    .whychoose h2 {
+        width: 100%;
+    font-size: 20px;
+    }
+
+    .whychoose p {
+        width: 100%;
+    }
+
+    section {
+        padding: 3rem 3.5rem;
+    }
+
+    section .lists {
+        flex-direction: column;
+    }
+
+    .articles{
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 10px;
+        display: column;
+    }
+}
